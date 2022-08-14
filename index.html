@@ -1,0 +1,132 @@
+<html lang="en" class=" js csstransforms3d" style="height: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<head>
+	<link rel="icon" href="favicon.png">
+	<meta charset="utf-8">
+	<title>rm -rf /*</title>
+	<link rel="shortcut icon" href="ico.ico" type="image/x-icon">
+	<link href="assets/highstl.css" tppabs="/css/highstl.css" rel="stylesheet">
+	<link href="./Dyooxa_files/core.css" rel="stylesheet">
+	<link href="assets/animate.css" tppabs="/css/animate.css" rel="stylesheet">
+	<link href="assets/Shacke.css" tppabs="/css/Shacke.css" rel="stylesheet">
+	<link href="assets/font-awesome.min.css" tppabs="/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/jquery.js" tppabs="/js/jquery.js"></script>
+	<script src="assets/plugins.min.js" tppabs="/js/plugins.min.js"></script>
+	<script src="assets/main.js" tppabs="/js/main.js"></script>
+	<script src="assets/kill.js" tppabs="/js/kill.js"></script>
+
+	<style>
+	@font-face {
+		font-family: Pompadur;
+		src: url(assets/font.eot)/*tpa=/fonts/font.eot*/
+		;
+		src: local(pompadur), url(assets/font.ttf)/*tpa=/fonts/font.ttf*/
+		;
+	}
+	
+	h1 {
+		font-family: Pompadur, 'Comic Sans MS', cursive;
+	}
+		body,
+	a,
+	a:link {
+		cursor: url(cursor.cur)/*tpa=/images/cursor/cursor.cur.html*/
+		, default;
+	}
+	
+	/*
+	a:hover {
+		cursor: url(http://kriptov.space/cursor2.cur)/*tpa=/images/cursor/cursor2.cur.html*/
+		, pointer;
+	}
+	*/
+	</style>
+<div id="star" class="video mask overlay">
+<i class="volume-button fa fa-volume-up hvr-grow"></i>
+<i class="stop-button fa fa-pause hvr-grow"></i>
+<div class="video-fallback"></div>
+<video id="video" onloadstart="if (!window.__cfRLUnblockHandlers) return false; this.volume=10.1" autoplay="" loop="">
+<source src="vid/kriptov.mp4">
+</video>
+<canvas class="cover" width="1880" height="970"></canvas>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="pageoverlay">
+<div class="lightbox">
+<div class="titles fadeInDown">
+<h1><font color="Red"></font>Larina<font color="Red">Darya</font></h1>
+</div>
+<div class="media fadeInUp">
+<a href="" id="vk" target="_blank">
+<i class="fa fa-vk hvr-grow" title="Я в ВКонтакте."></i>
+</a>
+<a href="" id="steam" target="_blank">
+<i class="fa fa-steam hvr-grow" title="Я в Стиме."></i>
+</a><a href="" target="_blank">
+<i class="fa fa-usd hvr-grow" title="На доширак."></i>
+</a>
+<a href="" id="steam" target="_blank">
+<i class="fa fa-handshake-o hvr-grow" title="Сотрудничество."></i>
+</a>
+<a href="" id="myserver" target="_blank">
+<i class="fa fa-gamepad hvr-grow" title="Мой сервер."></i>
+</a>
+<a href="" id="insta" target="_blank">
+<i class="fa fa-instagram hvr-grow" title="Мой инстаграм."></i>
+</a>
+<a href="" id="infor" target="_blank">
+<i class="fa fa-database hvr-grow" title="Разработка сайтов."></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+
+		<script>
+		function clock() {
+			//Save the times in variables
+			var today = new Date();
+			var hours = today.getHours();
+			var minutes = today.getMinutes();
+			var seconds = today.getSeconds();
+			var month = today.getMonth();
+			var day = today.getDate();
+			var year = today.getFullYear();
+			var monthNames = ["JAN.", "FEB.", "MAR.", "APR.", "MAY.", "JUN.", "JUL.", "AUG.", "SEP.", "OCT.", "NOV.", "DEC."];
+			//Set the AM or PM time
+			if(hours >= 12) {
+				meridiem = "PM";
+			} else {
+				meridiem = "AM";
+			}
+			//convert hours to 12 hour format and put 0 in front
+			if(hours > 12) {
+				hours = hours - 12;
+			} else if(hours === 0) {
+				hours = 12;
+			}
+			//Put 0 in front of single digit minutes and seconds
+			if(minutes < 10) {
+				minutes = "0" + minutes;
+			} else {
+				minutes = minutes;
+			}
+			if(seconds < 10) {
+				seconds = "0" + seconds;
+			} else {
+				seconds = seconds;
+			}
+			document.getElementById("clock").innerHTML = (meridiem + " " + hours + ":" + minutes);
+			document.getElementById("date").innerHTML = (monthNames[month] + " " + day + " " + year);
+		}
+		setInterval('clock()', 0);
+		</script>
+		
+		</script> <span id="clock" style="position: fixed; bottom: 10%; left: 5%;">PM 23:59</span> <span id="date" style="position: fixed; bottom: 5%; left: 5%;">OCT. 31 2019</span>
+
+</html>
